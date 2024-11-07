@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     private final CalculatingService calculatingService;
+
+    public CalculatorController(CalculatingService calculatingService) {
+        this.calculatingService = calculatingService;
+    }
+
     @GetMapping(path = "/calculator")
     public String beginning() {
         return calculatingService.beginning();

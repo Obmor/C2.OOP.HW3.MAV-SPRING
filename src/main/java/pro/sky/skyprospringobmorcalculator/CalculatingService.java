@@ -1,6 +1,9 @@
 package pro.sky.skyprospringobmorcalculator;
 
+import org.springframework.stereotype.Service;
 
+
+@Service
 public class CalculatingService {
     public String beginning() {
         return "Hello! Let's calculating!";
